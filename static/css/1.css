@@ -1,0 +1,67 @@
+/*
+  #search-form 元素是整个搜索表单的外层容器。
+  通过给它设置 absolute 定位和 top/left/transform 属性，
+  我们让它居中显示在浏览器窗口中。
+*/
+#search-form {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+/*
+  #search-engine, #search-keyword, #search-button 分别是
+  搜索引擎选择下拉菜单、搜索关键字输入框和搜索按钮。
+  通过给它们设置 border、border-radius 和 padding 属性，
+  我们让它们看起来更像传统的表单控件。
+  通过给它们设置 transition 属性，
+  我们让它们在修改其它属性时，有一个平滑的过渡效果。
+*/
+#search-engine,
+#search-keyword,
+#search-button {
+  border: 1px solid #ccc;
+  border-radius: 20px;
+  padding: 8px;
+  transition: all 1s;
+}
+
+/*
+  #search-keyword 元素是搜索关键字输入框。
+  通过给它设置 flex:1 属性，
+  我们让它随着其它兄弟元素的变化而自动调整宽度。
+  通过给它设置 transition 属性，
+  我们让它在修改宽度时，有一个平滑的过渡效果。
+*/
+#search-keyword {
+  flex: 1;
+  transition: all 1s;
+  border-radius: 20px;
+}
+
+/*
+  #search-keyword:hover 元素是鼠标悬停在 #search-keyword 元素上时的样式。
+  通过给它设置 width 属性，
+  我们让它的宽度在鼠标悬停时变为 300px。
+*/
+#search-keyword:hover {
+  width: 300px;
+}
+
+/*
+  #time-display 元素是一个用于显示当前时间的容器。
+  通过给它设置 fixed 定位和 top/right 属性，
+  我们让它固定在页面右上角。
+  通过给它设置 padding、background-color、color 和 font-size 属性，
+  我们让它看起来更像一个简单的信息提示框。
+*/
+#time-display {
+  position: fixed;
+  top: 0;
+  right: 0;
+  padding: 8px;
+  background-color: rgba(0, 0, 0, 0.1);
+  color: #333;
+  font-size: 14px;
+}
