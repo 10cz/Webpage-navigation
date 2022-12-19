@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <title>搜索</title>
+  <!-- 引用 1.css 样式表文件 -->
+  <link rel="stylesheet" href="./static/css/1.css">
+  <!-- 引用 i1.css 样式表文件 -->
+  <link href="./static/css/i1.css" rel="stylesheet">
+</head>
+<!-- 设置背景图片 -->
+<div id="wallpaper"></div>
+<body background="./images/R-C.jfif"></body>
+<body>
+  <!-- 定义搜索表单 -->
+  <form id="search-form">
+    <!-- 定义下拉列表 -->
+    <select id="search-engine">
+      <option value="baidu">百度</option>
+      <option value="bing">必应</option>
+      <option value="google">谷歌</option>
+    </select>
+    <!-- 定义文本输入框 -->
+    <input type="text" id="search-keyword" placeholder="请输入搜索关键词">
+    <!-- 定义提交按钮 -->
+    <button type="submit" id="search-button">搜索</button>
+  </form>
+  <!-- 定义 class 为 c1a 的 div 元素 -->
+  <div class="c1a"></div>
+  <!-- 定义 id 为 he-plugin-simple 的 div 元素 -->
+  <div id="he-plugin-simple"></div>
+  <!-- 引用 0.js 脚本文件 -->
+  <script src="./static/js/0.js"></script>
+  <!-- 引用 he-simple-common.js 脚本文件 -->
+  <script src="https://widget.qweather.net/simple/static/js/he-simple-common.js?v=2.0"></script>
+  <!-- 引用 sj.js 脚本文件 -->
+  <script src="./static/js/sj.js"></script>
+  <!-- 引用 hitokoto 脚本文件 -->
+  <script type="text/javascript" src="https://api.uixsj.cn/hitokoto/get?type=hitokoto&code=js"></script>
+  <!-- 定义 id 为 hitokoto 的 div 元素 -->
+  <div id="hitokoto" class="c1">
+  <!-- 调用 hitokoto 函数 -->
+  <script>hitokoto()</script>
+</body>
+</html>
