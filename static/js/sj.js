@@ -45,7 +45,7 @@ WIDGET = {
 
 
 // 设置倒计时的目标日期
-var countDownDate = new Date("Jan 5, 2022 15:37:25").getTime();
+var countDownDate = new Date("Jan 1, 2023 00:00:00").getTime();
 
 // 每隔一秒更新一次倒计时
 var x = setInterval(function() {
