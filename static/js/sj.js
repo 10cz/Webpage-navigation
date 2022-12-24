@@ -48,7 +48,6 @@ WIDGET = {
 var countDownDate = new Date("Jan 5, 2022 15:37:25").getTime();
 
 // 每隔一秒更新一次倒计时
-
 var x = setInterval(function() {
 
   // 获取当前日期和时间
@@ -70,6 +69,7 @@ var x = setInterval(function() {
   // 如果倒计时结束，请在计时器文本中写入文本
   if (distance < 0) {
     clearInterval(x);
+    
     document.getElementById("timer").innerHTML = "EXPIRED";
   }
 }, 1000);
