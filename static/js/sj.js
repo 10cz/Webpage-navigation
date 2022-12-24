@@ -16,6 +16,7 @@ setInterval(function() {
 }, 1000)
 
 // 定义 WIDGET 变量，该变量是一个对象，包含一个名为 CONFIG 的对象，该对象包含了一些配置信息
+
 WIDGET = {
     "CONFIG": {
       "modules": "01234",
@@ -41,3 +42,48 @@ WIDGET = {
   }
 
 
+
+
+// 设置倒计时的目标日期
+
+var countDownDate = new Date("Jan 5, 2022 15:37:25").getTime();
+
+// 每隔一秒更新一次倒计时
+
+var x = setInterval(function() {
+
+  // 获取当前日期和时间
+
+  var now = new Date().getTime();
+
+  // 计算时间差
+
+  var distance = countDownDate - now;
+
+  // 计算天、小时、分钟和秒
+
+  var days = Math.floor(distance / (1000 * 60 * 60 * 24));
+
+  var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+
+  var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+
+  var seconds = Math.floor((distance % (1000 * 60)) / 1000);
+
+  // 将结果写入计时器文本
+
+  document.getElementById("timer").innerHTML = days + "天 " + hours + "小时 "
+
+  + minutes + "分钟 " + seconds + "秒 ";
+
+  // 如果倒计时结束，请在计时器文本中写入文本
+
+  if (distance < 0) {
+
+    clearInterval(x);
+
+    document.getElementById("timer").innerHTML = "EXPIRED";
+
+  }
+
+}, 1000);
