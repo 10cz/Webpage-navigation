@@ -33,3 +33,10 @@
     margin-top: 25px;
   }
   
+
+/* 设置计时器文本的样式 */
+      #timer {
+        font-size: 48px;
+        font-weight: bold;
+        color: white;
+      }
