@@ -70,6 +70,6 @@ var x = setInterval(function() {
   if (distance < 0) {
     clearInterval(x);
     
-    document.getElementById("timer").innerHTML = "EXPIRED";
+    document.getElementById("timer").innerHTML = "设置时间以过";
   }
 }, 1000);
