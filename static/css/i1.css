@@ -13,7 +13,7 @@
     padding: 0;
     font-weight: 800;
     font-size: 43px;
-    margin-top: 40px;
+    margin-top: 50px;
   }
   
   /*
@@ -36,7 +36,7 @@
 
 /* 设置计时器文本的样式 */
       #timer {
-        font-size: 48px;
+        font-size: 18px;
         font-weight: bold;
         color: white;
         position: absolute;
