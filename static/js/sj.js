@@ -63,7 +63,7 @@ var x = setInterval(function() {
   var seconds = Math.floor((distance % (1000 * 60)) / 1000);
 
   // 在倒计时前面增加距离 2023 年的信息
-  document.getElementById("timer").innerHTML = "距离 2023 年还有：" + days + "天 " + hours + "小时 "
+  document.getElementById("timer").innerHTML = "距离2023年还有1月1日0点0分0秒：" + days + "天 " + hours + "小时 "
   + minutes + "分钟 " + seconds + "秒 ";
 
   // 当倒计时结束时，显示文本 "已到达目标日期"
